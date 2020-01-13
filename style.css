@@ -1,0 +1,34 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.linhas{
+    display: flex;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.celula1{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin-left: 10px;
+}
+
+.celula2{
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    margin-left: 10px;
+}
+
+.celula3{
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    margin-left: 10px;
+}
