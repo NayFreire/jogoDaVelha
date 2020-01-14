@@ -7,7 +7,6 @@ html{
 
 .linhas{
     display: flex;
-    background-color: blue;
     width: 200px;
     height: 200px;
     border: black;
@@ -26,23 +25,25 @@ section, h1{
     font-size: 50px;
 }
 
-.centraliza{
-    display: grid;
-    margin: 0 auto;
-    padding: 0;
+.imagemX{
+    /*width: 80%;
+    height: 80%;*/
+    background-color: transparent;
 }
 
-.XR{/*traço do X que vai para a direita*/
-    background-color: chartreuse;
-    width: 15%;
-    height: 60%;
-    transform: rotate(45deg);
+.marcado, .imagemX:hover{
+    background-image: url("imagens/Xconcertado.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.XL{/*traço do X que vai para a esquerda*/
-    background-color: chartreuse;
-    width: 15%;
-    height: 60%;
-    transform: rotate(-45deg);
-    margin-left: -30px;
+.imagemO{
+    background-color: transparent;
 }
+
+.imagemO:hover{
+    background-image: url("imagens/Oconsertado.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
