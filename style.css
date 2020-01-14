@@ -1,8 +1,8 @@
 html{
-    margin: 0;
+    display: block;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    background-color: #aaaaaa;
 }
 
 .linhas{
@@ -10,25 +10,19 @@ html{
     background-color: blue;
     width: 200px;
     height: 200px;
+    border: black;
+    border-radius: 50px;
+    border-style: solid;
 }
 
-.celula1{
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
-    margin-left: 10px;
+section, h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
 }
 
-.celula2{
-    width: 100px;
-    height: 100px;
-    background-color: darkmagenta;
-    margin-left: 10px;
-}
-
-.celula3{
-    width: 100px;
-    height: 100px;
-    background-color: darkorange;
-    margin-left: 10px;
+.centraliza{
+    display: grid;
+    margin: 0 auto;
+    padding: 0;
 }
