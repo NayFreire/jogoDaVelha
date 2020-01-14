@@ -6,6 +6,7 @@ var sessao = document.getElementById("linha1");
 var celulas1 = sessao.getElementsByClassName("linhas");
 
 // Loop through the buttons and add the active class to the current/clicked button
+// teste teste teste teste
 for (var i = 0; i < celulas1.length; i++) {
     celulas1[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("marcadoX");
