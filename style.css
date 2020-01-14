@@ -31,7 +31,7 @@ section, h1{
     background-color: transparent;
 }
 
-.marcado, .imagemX:hover{
+.marcadoX, .imagemX:hover{
     background-image: url("imagens/Xconcertado.png") ;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,7 +41,7 @@ section, h1{
     background-color: transparent;
 }
 
-.imagemO:hover{
+.marcadoO, .imagemO:hover{
     background-image: url("imagens/Oconsertado.png") ;
     background-repeat: no-repeat;
     background-position: center;
