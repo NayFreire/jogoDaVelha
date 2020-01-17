@@ -19,6 +19,34 @@ html{
     align-content: center;
 }
 
+.X{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: black;
+    border-radius: 50px;
+    border-style: solid;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.O{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: black;
+    border-radius: 50px;
+    border-style: solid;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
 section, h1{
     display: flex;
     justify-content: center;
@@ -31,7 +59,7 @@ section, h1{
     background-color: transparent;
 }
 
-.marcadoX, .imagemX:hover{
+.marcadoX, .imagemX:hover, .X:hover, .X:hover:not(.O){
     background-image: url("imagens/Xconcertado.png") ;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,7 +69,7 @@ section, h1{
     background-color: transparent;
 }
 
-.marcadoO, .imagemO:hover{
+.marcadoO, .imagemO:hover, .O:hover, .O:hover:not(.X){
     background-image: url("imagens/Oconsertado.png") ;
     background-repeat: no-repeat;
     background-position: center;
