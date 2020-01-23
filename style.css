@@ -26,6 +26,13 @@ section, h1{
 }
 
 .x{
+    cursor: not-allowed;
     content: 'X';
+}
 
+.o{
+    cursor: not-allowed;
+}
+.linhas:not(.x):not(.o){
+    background-color: transparent;
 }
