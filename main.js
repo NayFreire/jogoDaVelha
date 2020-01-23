@@ -47,6 +47,7 @@ function clicado(cel,vez){
 
   let a=0, b=0, c=0, d=0, e=0, f=0, g=0, h=0, k=0
   let tab
+
   if(!vez){
     cel.innerHTML='X'
     marcacoesX.push(cel.getAttribute('id'))
@@ -66,6 +67,7 @@ function clicado(cel,vez){
         }
       }
     }
+
     for(var i=0; i<marcacoesX.length; i++){
       for(var j=0; j<3; j++){
         if(marcacoesX[i] == p3[j]){
@@ -109,7 +111,11 @@ function clicado(cel,vez){
       }
     }
     if(a==3 || b==3 || c==3 || d==3 || e==3 || f==3 || g==3 || h==3 || k==3){
-      tab = document.write('Venceu X')
+      alert('Venceu X')
+      document.location.reload()
+    }
+    else if(marcacoesX.length == 5){
+      velha()
     }
     
   }
@@ -175,9 +181,27 @@ function clicado(cel,vez){
       }
     }
     if(a==3 || b==3 || c==3 || d==3 || e==3 || f==3 || g==3 || h==3 || k==3){
-      tab = document.write('Venceu O')
+      alert('Venceu O')
+      document.location.reload()
+    }
+    else if(marcacoesO.length == 5){
+      velha()
     }
     
   }
 }
-
+  let totalJogadas = []
+  let total = []
+function velha(){
+  total = ['celula11', 'celula12', 'celula13', 'celula21', 'celula22', 'celula23', 'celula31', 'celula32', 'celula33']
+  totalJogadas.push(marcacoesX)
+  totalJogadas.push(marcacoesO)
+  for(var l=0; l<total.length; l++){
+    for(var m=0; m<totalJogadas.length; m++){
+      if(total[l].indexOf(totalJogadas[m] != -1)){
+        alert('velha')
+        document.location.reload()
+      }
+    }
+  }
+}
